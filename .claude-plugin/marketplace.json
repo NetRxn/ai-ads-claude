@@ -12,8 +12,8 @@
     {
       "name": "ai-ads-claude",
       "source": {
-        "source": "github",
-        "repo": "NetRxn/ai-ads-claude",
+        "source": "git",
+        "url": "https://github.com/NetRxn/ai-ads-claude.git",
         "branch": "main"
       },
       "description": "AI Ads Strategist: 16 skills + 5 agents for building complete ad strategies, copy, funnels, and PDF reports.",
