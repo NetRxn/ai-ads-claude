@@ -4,12 +4,12 @@
 
 <p align="center">
   <strong>AI Ads Strategist for Claude Code.</strong> Build complete ad strategies, generate platform-specific copy,<br/>
-  design campaign funnels, allocate budgets, and produce client-ready PDF reports — 15 skills, 5 parallel agents, 6 platforms.
+  design campaign funnels, allocate budgets, and produce client-ready PDF reports — 16 skills, 5 parallel agents, 6 platforms.
 </p>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"/></a>
-  <img src="https://img.shields.io/badge/Skills-15-blue" alt="15 Skills"/>
+  <img src="https://img.shields.io/badge/Skills-16-blue" alt="16 Skills"/>
   <img src="https://img.shields.io/badge/Agents-5-orange" alt="5 Agents"/>
   <img src="https://img.shields.io/badge/Platforms-6-green" alt="6 Platforms"/>
   <img src="https://img.shields.io/badge/Python-3.8+-blue" alt="Python 3.8+"/>
@@ -20,11 +20,16 @@
 
 ## Quick Start
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/zubair-trabzada/ai-ads-claude/main/install.sh | bash
+Install via the NetRxn plugin marketplace in Claude Code:
+
+```
+/plugin marketplace add NetRxn/ai-ads-claude
+/plugin install ai-ads-claude@netrxn-ai-ads
 ```
 
-That's it. One command installs all 15 skills, 5 agents, and the PDF generation scripts.
+That's it. All 16 skills, 5 agents, and the PDF generation script are loaded.
+
+> This plugin installs exclusively from the [NetRxn fork](https://github.com/NetRxn/ai-ads-claude). Upstream changes are never applied automatically — the fork maintainer controls when updates merge.
 
 ---
 
@@ -232,31 +237,30 @@ Add ad strategy to your service offering. Use `/ads report-pdf` to deliver profe
 - **Python 3.8+** (for PDF generation only)
 - **reportlab** — `pip3 install reportlab` (for PDF generation only)
 
-### One-Line Install
+### Install via marketplace
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/zubair-trabzada/ai-ads-claude/main/install.sh | bash
+```
+/plugin marketplace add NetRxn/ai-ads-claude
+/plugin install ai-ads-claude@netrxn-ai-ads
 ```
 
-### Manual Install
+### Local development install
+
+Clone and link into your `.claude/plugins` for development:
 
 ```bash
-git clone https://github.com/zubair-trabzada/ai-ads-claude.git
+git clone https://github.com/NetRxn/ai-ads-claude.git
 cd ai-ads-claude
-chmod +x install.sh
-./install.sh
+# Then add as a local marketplace in Claude Code:
+#   /plugin marketplace add .
+#   /plugin install ai-ads-claude@netrxn-ai-ads
 ```
 
 ### Uninstall
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/zubair-trabzada/ai-ads-claude/main/uninstall.sh | bash
 ```
-
-Or run locally:
-
-```bash
-./uninstall.sh
+/plugin uninstall ai-ads-claude
+/plugin marketplace remove netrxn-ai-ads
 ```
 
 ---
@@ -265,9 +269,11 @@ Or run locally:
 
 ```
 ai-ads-claude/
-├── ads/
-│   └── SKILL.md                      # Main orchestrator (command router)
+├── .claude-plugin/
+│   ├── plugin.json                   # Plugin manifest
+│   └── marketplace.json              # NetRxn marketplace definition
 ├── skills/
+│   ├── ads/SKILL.md                  # Main orchestrator (command router)
 │   ├── ads-audience/SKILL.md         # Audience personas & targeting
 │   ├── ads-competitors/SKILL.md      # Competitive ad intelligence
 │   ├── ads-keywords/SKILL.md         # Google Ads keyword strategy
@@ -280,6 +286,7 @@ ai-ads-claude/
 │   ├── ads-testing/SKILL.md          # A/B testing plans
 │   ├── ads-landing/SKILL.md          # Landing page audit
 │   ├── ads-audit/SKILL.md            # Ad performance audit
+│   ├── ads-strategy/SKILL.md         # Full strategy orchestrator
 │   ├── ads-report-pdf/SKILL.md       # PDF report generator
 │   └── ads-quick/SKILL.md            # 60-second snapshot
 ├── agents/
@@ -290,9 +297,8 @@ ai-ads-claude/
 │   └── ads-budget.md                 # Budget & ROI agent
 ├── scripts/
 │   └── generate_ads_pdf.py           # PDF generation (ReportLab)
-├── install.sh                        # One-line installer
-├── uninstall.sh                      # Clean uninstaller
 ├── requirements.txt                  # Python dependencies
+├── LICENSE                           # MIT license (original + fork)
 └── README.md
 ```
 
@@ -304,19 +310,11 @@ This tool is for educational and informational purposes only. Ad strategy recomm
 
 ---
 
-<p align="center">
-  <strong>Part of the Claude Code Skills Series</strong><br>
-  <a href="https://github.com/zubair-trabzada/ai-marketing-claude">AI Marketing Suite</a> ·
-  <a href="https://github.com/zubair-trabzada/ai-sales-team-claude">AI Sales Team</a> ·
-  <a href="https://github.com/zubair-trabzada/ai-legal-claude">AI Legal Assistant</a> ·
-  <a href="https://github.com/zubair-trabzada/ai-reputation-claude">AI Reputation Manager</a> ·
-  <a href="https://github.com/zubair-trabzada/geo-seo-claude">GEO/SEO Optimizer</a> ·
-  <strong>AI Ads Strategist</strong>
-</p>
+## Credits
 
-<p align="center">
-  <a href="https://skool.com/aiworkshop">Learn How to Sell Claude Code Services to Real Businesses</a>
-</p>
+This plugin is a fork of [zubair-trabzada/ai-ads-claude](https://github.com/zubair-trabzada/ai-ads-claude), originally created by Zubair Trabzada and released under the MIT License. The original upstream includes a series of related Claude Code skill collections — [AI Marketing Suite](https://github.com/zubair-trabzada/ai-marketing-claude), [AI Sales Team](https://github.com/zubair-trabzada/ai-sales-team-claude), [AI Legal Assistant](https://github.com/zubair-trabzada/ai-legal-claude), [AI Reputation Manager](https://github.com/zubair-trabzada/ai-reputation-claude), and [GEO/SEO Optimizer](https://github.com/zubair-trabzada/geo-seo-claude).
+
+**This fork (NetRxn/ai-ads-claude)** repackages the skills and agents as a Claude Code plugin distributable via marketplace. Upstream changes are not applied automatically; the NetRxn fork is the sole source for this plugin. See `LICENSE` for the full MIT copyright notice.
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"/></a>

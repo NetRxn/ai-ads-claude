@@ -1,6 +1,7 @@
 ---
 name: ads-competitors
 description: Competitive Ad Intelligence. Analyzes competitor advertising strategies including platform identification, landing page analysis, targeting reverse-engineering, positioning gaps, creative approach evaluation, and builds a "beat the competition" strategy with a competitor ad swipe file template.
+version: 0.1.0
 ---
 
 # Competitive Ad Intelligence

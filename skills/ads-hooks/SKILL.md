@@ -1,6 +1,7 @@
 ---
-name: Scroll-Stopping Hook Generator
+name: ads-hooks
 description: Generates 20+ scroll-stopping ad hooks organized by psychological angle (pain, curiosity, social proof, contrarian, urgency) with platform-specific formatting, A/B variations, and psychology breakdowns
+version: 0.1.0
 ---
 
 # Scroll-Stopping Hook Generator

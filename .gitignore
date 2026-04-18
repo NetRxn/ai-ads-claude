@@ -1,6 +1,7 @@
 *.pdf
 *.json
 !scripts/*.json
+!.claude-plugin/*.json
 __pycache__/
 *.pyc
 .DS_Store

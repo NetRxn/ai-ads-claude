@@ -1,0 +1,37 @@
+{
+  "name": "netrxn-ai-ads",
+  "owner": {
+    "name": "NetRxn",
+    "url": "https://github.com/NetRxn"
+  },
+  "metadata": {
+    "description": "NetRxn marketplace for the ai-ads-claude plugin. Always installs from the NetRxn fork — upstream changes never apply automatically.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "ai-ads-claude",
+      "source": {
+        "source": "git",
+        "url": "https://github.com/NetRxn/ai-ads-claude.git",
+        "branch": "main"
+      },
+      "description": "AI Ads Strategist: 16 skills + 5 agents for building complete ad strategies, copy, funnels, and PDF reports.",
+      "version": "0.1.0",
+      "author": {
+        "name": "NetRxn",
+        "url": "https://github.com/NetRxn"
+      },
+      "homepage": "https://github.com/NetRxn/ai-ads-claude",
+      "license": "MIT",
+      "category": "marketing",
+      "tags": [
+        "advertising",
+        "marketing",
+        "strategy",
+        "copywriting",
+        "pdf-reports"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 ---
 name: ads-funnel
 description: Full Ads Funnel Architect. Builds a complete advertising funnel across TOFU, MOFU, BOFU, and Retargeting stages with platform-specific templates, audience targeting, ad formats, copy angles, landing page requirements, KPIs, and budget allocation for Meta, Google, and LinkedIn.
+version: 0.1.0
 ---
 
 # Full Ads Funnel Architect
