@@ -1,6 +1,7 @@
 ---
 name: ads-budget
 description: Budget Allocation & ROI Projector. Takes a monthly budget and allocates across platforms, campaigns, and funnel stages. Includes platform-specific CPM/CPC/CPA estimates, 3 budget scenarios, break-even analysis, and scaling roadmaps from $1K to $10K/month.
+version: 0.1.0
 ---
 
 # Budget Allocation & ROI Projector

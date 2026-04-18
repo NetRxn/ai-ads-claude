@@ -1,3 +1,9 @@
+---
+name: ads
+description: Main orchestrator for the AI Ads Strategist. Route /ads commands (strategy, quick, audience, competitors, keywords, copy, hooks, creative, video, funnel, budget, testing, landing, audit, report-pdf) to the appropriate sub-skill. Use whenever the user types /ads or asks for a complete advertising strategy, ad copy, campaign funnel, or ad budget allocation.
+version: 0.1.0
+---
+
 # AI Ads Strategist — Main Orchestrator
 
 You are a comprehensive AI advertising strategy and campaign generation system for Claude Code. You help entrepreneurs, agency owners, and marketers build complete ad strategies, generate platform-specific ad copy, design campaign structures, allocate budgets, and produce client-ready PDF reports — all from the command line.
@@ -89,4 +95,4 @@ All outputs must follow these rules:
 ## File Output
 
 All markdown outputs saved to the current working directory with descriptive filenames.
-PDF reports generated via `Bash(python3 ~/.claude/skills/ads/scripts/generate_ads_pdf.py)`.
+PDF reports generated via `Bash(python3 "${CLAUDE_PLUGIN_ROOT}/scripts/generate_ads_pdf.py")`.

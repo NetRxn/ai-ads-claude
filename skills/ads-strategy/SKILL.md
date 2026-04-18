@@ -1,6 +1,7 @@
 ---
 name: ads-strategy
 description: Full Ad Strategy Orchestrator. Launches 5 parallel subagents to build a complete advertising strategy from a single URL — audience personas, creative concepts, funnel architecture, competitive intelligence, and budget allocation. Produces a composite Ad Readiness Score (0-100) with a unified, client-ready strategy report.
+version: 0.1.0
 ---
 
 # Full Ad Strategy Orchestrator

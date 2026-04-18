@@ -36,7 +36,7 @@ Generate a polished, client-ready PDF advertising strategy report using the Repo
 First, check if the dedicated PDF generation script exists:
 
 ```bash
-ls ~/.claude/skills/ads/scripts/generate_ads_pdf.py 2>/dev/null
+ls "${CLAUDE_PLUGIN_ROOT}/scripts/generate_ads_pdf.py" 2>/dev/null
 ```
 
 **If the script exists:** Use it directly (skip to Step 4).
@@ -150,7 +150,7 @@ Compile all extracted data into a structured JSON object for the PDF generator:
 Run the PDF generation script with the compiled JSON data:
 
 ```bash
-python3 ~/.claude/skills/ads/scripts/generate_ads_pdf.py
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/generate_ads_pdf.py"
 ```
 
 If the script does not exist, generate it inline. The script must produce a PDF with these sections:

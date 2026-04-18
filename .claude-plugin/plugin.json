@@ -1,0 +1,23 @@
+{
+  "name": "ai-ads-claude",
+  "version": "0.1.0",
+  "description": "AI Ads Strategist for Claude Code — build complete ad strategies, generate platform-specific copy, design campaign funnels, allocate budgets, and produce client-ready PDF reports. 16 skills, 5 parallel agents, 6 platforms.",
+  "author": {
+    "name": "NetRxn",
+    "url": "https://github.com/NetRxn"
+  },
+  "homepage": "https://github.com/NetRxn/ai-ads-claude",
+  "repository": "https://github.com/NetRxn/ai-ads-claude",
+  "license": "MIT",
+  "keywords": [
+    "advertising",
+    "ads",
+    "marketing",
+    "strategy",
+    "copywriting",
+    "google-ads",
+    "meta-ads",
+    "tiktok-ads",
+    "pdf-reports"
+  ]
+}

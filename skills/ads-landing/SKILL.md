@@ -1,6 +1,7 @@
 ---
 name: ads-landing
 description: Landing Page Audit & Optimizer. Analyzes landing pages for ad-to-page alignment, message match, CTA clarity, trust signals, mobile optimization, and form friction. Generates specific rewrite suggestions with before/after copy, or builds a complete landing page outline from scratch.
+version: 0.1.0
 ---
 
 # Landing Page Audit & Optimizer

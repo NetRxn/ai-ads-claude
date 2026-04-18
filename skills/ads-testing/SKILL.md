@@ -1,6 +1,7 @@
 ---
 name: ads-testing
 description: A/B Testing Plan Generator. Creates structured testing roadmaps with prioritized test sequences, duration calculators, sample size requirements, statistical significance thresholds, hypothesis templates, and 90-day testing calendars for Meta, Google, and LinkedIn.
+version: 0.1.0
 ---
 
 # A/B Testing Plan Generator
